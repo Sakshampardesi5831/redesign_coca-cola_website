@@ -1,0 +1,465 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./fonts/Font/Gilroy-Medium.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #222;
+}
+/*------------------------------------------NAVIGATION PART START--------------------------------------------------------------------------*/
+#nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  /* background-color: red; */
+  padding: 0 8vw;
+  color: #fff;
+}
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+#center {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#center a {
+  white-space: nowrap;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+}
+#center #logo .line {
+  width: 130px;
+  height: 2px;
+  background-color: rgb(220, 14, 14);
+}
+#center #logo img {
+  width: 120px;
+}
+#hero {
+  display: flex;
+  width: 100%;
+  min-height: 90vh;
+}
+#left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: calc(100% / 3);
+  min-height: inherit;
+  color: white;
+  padding: 0 2vw;
+}
+#left > h1 {
+  line-height: 1;
+  font-size: 2.5vw;
+  margin-bottom: 2vw;
+}
+#left > h1 > span {
+  font-weight: 300;
+  color: red;
+}
+#left > p {
+  width: 80%;
+}
+#left #btn {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  /* background-color:palegoldenrod; */
+}
+.hred {
+  color: rgb(220, 14, 14);
+  margin-left: 10px;
+}
+#left button {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 15px 20px;
+  background-color: rgb(220, 14, 14);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+}
+#left button i {
+  margin-right: 10px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+#centerdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  min-height: inherit;
+  /* background-color: blue; */
+}
+#centerdiv #tomb {
+  position: relative;
+  width: 70%;
+  height: 70vh;
+  /* background-color: red; */
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+}
+#tomb #capsule {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 50%;
+  height: 60px;
+  border-radius: 100px;
+  background-color: #333;
+  right: -30%;
+  top: 30%;
+  color: #fff;
+  padding: 0 25px 0 5px;
+}
+#tomb #capsule #photo {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-image: url("./images/jessica.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#tomb #capsule #textcap h6 {
+  color: #ddaf64;
+}
+#tomb img {
+  height: 85vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+#rightdiv {
+  position: relative;
+  width: calc(100% / 3);
+  min-height: inherit;
+  /* background-color: green; */
+}
+#rbottom {
+  width: 80%;
+  position: absolute;
+  bottom: 10vh;
+  /* height: 50px; */
+  /* background-color: red; */
+  color: #fff;
+
+  padding-top: 0.7vw;
+}
+#rbottom .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.5;
+  padding-bottom: 1vw;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #444;
+}
+#rbottom .row:nth-child(3) {
+  opacity: 1;
+  border-bottom: initial;
+  justify-content: flex-start;
+  margin-bottom: initial;
+}
+#rbottom p {
+  font-size: 12px;
+  width: 80%;
+}
+#scroll {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #666;
+}
+#circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #666;
+  border: 1px solid #666;
+}
+/*------------------------------------RESPONSIVE PART----------------------------------------------------------------------------*/
+@media  (min-width:600px) and (max-width:1024px) {
+
+    #nav #center a {
+        display: none;
+      }
+      #nav #center #logo .line{
+        width: 90px;
+      }
+      #center{
+        left: 53%;
+      }
+      #nav a i{
+        margin-right: 15px;
+    }
+    #center #logo img{
+        width: 100px;
+        margin : 0 5px;
+      }
+      /*----------------------------------Navigation part complete ------------------------------------------------------------------*/
+      /*----------------------------------COCA COLA HERO PART REPONSIVE START---------------------------------------------------------*/
+      #hero{
+        flex-direction: column;
+      }
+      #hero #left{
+        width: 100%;
+        min-height: initial;
+        padding: 5vw 3vw;
+      }
+      #left h1{
+        font-size: 9vw;
+      }
+      #left p{
+        margin-top: 20px;
+      }
+      #centerdiv{
+        width: 100%;
+        min-height: initial;
+     }
+     #centerdiv #tomb{
+        width: 60%;
+        min-height: 50vh;
+      }
+      #tomb #capsule{
+        width: 40%;
+        
+      }
+      #tomb #capsule #photo{
+         width: 5vw;
+         height: 5vw;
+      }
+      #centerdiv #tomb img{
+        height: 80vh;
+    }
+    #rightdiv{
+        width: 100%;
+        min-height: initial;
+        margin-top: 10vw;
+        margin-bottom: 30px;
+      }
+      #rbottom{
+        position: static;
+        bottom: initial;
+        width: 100%;
+        padding: 0 3vw;
+    
+      }
+}
+@media (max-width: 550px) {
+    #nav {
+        padding : 0 8vw;
+    }
+    #nav a{
+        font-size: 13px;
+    }
+    #nav a i{
+        margin-right: 10px;
+    }
+  #nav #center a {
+    display: none;
+  }
+  #nav #center #logo .line{
+    width: 30px;
+  }
+  #center{
+    left: 54%;
+  }
+ #center #logo img{
+    width: 80px;
+    margin : 0 5px;
+  }
+  
+  /*----------------------------------Navigation part complete ------------------------------------------------------------------*/
+  /*----------------------------------COCA COLA HERO PART REPONSIVE START---------------------------------------------------------*/
+
+  #hero{
+    flex-direction: column;
+  }
+  #hero #left{
+    width: 100%;
+    min-height: initial;
+    padding: 10vw 3vw;
+  }
+  #left h1{
+    font-size: 9vw;
+  }
+  #left p{
+    margin-top: 20px;
+  }
+  #centerdiv{
+     width: 100%;
+     min-height: 70vh;
+  }
+  #centerdiv #tomb{
+    min-height: 50vh;
+  }
+  #centerdiv #tomb img{
+      height: 80vh;
+  }
+  #tomb #capsule {
+     right: -18%;
+     top: 10%;
+  }
+  #tomb #capsule #photo{
+      width: 8vw;
+      height: 8vw;
+  }
+  #tomb #capsule #textcap h4{
+      white-space: nowrap;
+      font-size: 8px;
+  }
+  /* #rightdiv{
+    width: 100%;
+    min-height: 60vh;
+    padding: 8vw 3vw;
+  } */
+  #rightdiv{
+    width: 100%;
+    min-height: initial;
+    margin-top: 20vw;
+    margin-bottom: 30px;
+  }
+  #rbottom{
+    position: static;
+    bottom: initial;
+    width: 100%;
+    padding: 0 3vw;
+
+  }
+}
+@media (max-width: 500px) {
+    #nav {
+        padding : 0 8vw;
+    }
+    #nav a{
+        font-size: 13px;
+    }
+    #nav a i{
+        margin-right: 10px;
+    }
+  #nav #center a {
+    display: none;
+  }
+  #nav #center #logo .line{
+    width: 30px;
+  }
+  #center{
+    left: 54%;
+  }
+ #center #logo img{
+    width: 80px;
+    margin : 0 5px;
+  }
+  
+  /*----------------------------------Navigation part complete ------------------------------------------------------------------*/
+  /*----------------------------------COCA COLA HERO PART REPONSIVE START---------------------------------------------------------*/
+
+  #hero{
+    flex-direction: column;
+  }
+  #hero #left{
+    width: 100%;
+    min-height: initial;
+    padding: 10vw 3vw;
+  }
+  #left h1{
+    font-size: 9vw;
+  }
+  #left p{
+    margin-top: 20px;
+  }
+  #centerdiv{
+     width: 100%;
+     min-height: 70vh;
+  }
+  #centerdiv #tomb{
+    min-height: 50vh;
+  }
+  #centerdiv #tomb img{
+      height: 80vh;
+  }
+  #tomb #capsule {
+     right: -18%;
+     top: 10%;
+     height: 40px;
+  }
+  #tomb #capsule #photo{
+      width: 8vw;
+      height: 8vw;
+  }
+  #tomb #capsule #textcap h4{
+      white-space: nowrap;
+      font-size: 8px;
+  }
+  /* #rightdiv{
+    width: 100%;
+    min-height: 60vh;
+    padding: 8vw 3vw;
+  } */
+  #rightdiv{
+    width: 100%;
+    min-height: initial;
+    margin-top: 20vw;
+    margin-bottom: 30px;
+  }
+  #rbottom{
+    position: static;
+    bottom: initial;
+    width: 100%;
+    padding: 0 3vw;
+
+  }
+}
+@media (min-width:400px) and (max-width:320) {
+    #center{
+        left: 54%;
+    }
+    
+    
+}
